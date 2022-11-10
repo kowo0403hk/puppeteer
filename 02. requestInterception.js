@@ -23,7 +23,7 @@ import puppeteer from 'puppeteer';
 
   await page.goto('https://danube-web.shop/');
 
-  await page.screenshot({ path: 'screenshot.png' });
+  await page.screenshot({ path: './screenshots/01. requestInterception.png' });
 
   await browser.close();
 })();
