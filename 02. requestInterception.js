@@ -12,6 +12,7 @@ import puppeteer from 'puppeteer';
 
   await page.setRequestInterception(true);
 
+  // add event listeners and handlers
   page.on('request', (request) => {
     console.log('>>', request.method(), request.url());
     request.continue();
